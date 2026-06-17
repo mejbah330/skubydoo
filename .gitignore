@@ -1,0 +1,37 @@
+# Dependencies
+skubydoo-frontend/node_modules/
+**/__pycache__/
+**/*.pyc
+skubydoo-backend/.venv/
+skubydoo-backend/venv/
+
+# Build
+skubydoo-frontend/.next/
+skubydoo-frontend/out/
+
+# Environment
+.env
+skubydoo-backend/.env
+
+# Database
+*.db
+*.db-journal
+*.db-wal
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test
+skubydoo-backend/test.db
+*.egg-info/
+
+# Docker
+skubydoo-backend/miniodata/
+skubydoo-backend/pgdata/
