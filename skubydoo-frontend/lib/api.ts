@@ -6,8 +6,18 @@ interface RequestOptions {
   headers?: Record<string, string>;
 }
 
-async function request<T>(endpoint: string, options: RequestOptions = {}): Promise<T> {
-  const { method = "GET", body, headers = {} } = options;
+async function request<T>(endpoint: string, tokenOrOptions?: string | RequestOptions): Promise<T> {
+  let method = "GET";
+  let body: unknown | undefined;
+  let headers: Record<string, string> = {};
+
+  if (typeof tokenOrOptions === "string") {
+    headers["Authorization"] = `Bearer ${tokenOrOptions}`;
+  } else if (tokenOrOptions) {
+    method = tokenOrOptions.method || "GET";
+    body = tokenOrOptions.body;
+    headers = { ...headers, ...(tokenOrOptions.headers || {}) };
+  }
 
   const config: RequestInit = {
     method,
@@ -32,10 +42,12 @@ async function request<T>(endpoint: string, options: RequestOptions = {}): Promi
 }
 
 export const api = {
-  get: <T>(endpoint: string) => request<T>(endpoint),
-  post: <T>(endpoint: string, body?: unknown) =>
-    request<T>(endpoint, { method: "POST", body }),
-  put: <T>(endpoint: string, body?: unknown) =>
-    request<T>(endpoint, { method: "PUT", body }),
-  delete: <T>(endpoint: string) => request<T>(endpoint, { method: "DELETE" }),
+  get: <T>(endpoint: string, token?: string) =>
+    request<T>(endpoint, token),
+  post: <T>(endpoint: string, body?: unknown, token?: string) =>
+    request<T>(endpoint, { method: "POST", body, headers: token ? { Authorization: `Bearer ${token}` } : {} }),
+  put: <T>(endpoint: string, body?: unknown, token?: string) =>
+    request<T>(endpoint, { method: "PUT", body, headers: token ? { Authorization: `Bearer ${token}` } : {} }),
+  delete: <T>(endpoint: string, token?: string) =>
+    request<T>(endpoint, { method: "DELETE", headers: token ? { Authorization: `Bearer ${token}` } : {} }),
 };

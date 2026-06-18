@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
+from uuid import UUID
 import hashlib
 from jose import jwt, JWTError
 
@@ -38,7 +39,7 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(
             raise HTTPException(status_code=401, detail="Invalid token")
     except JWTError:
         raise HTTPException(status_code=401, detail="Invalid token")
-    user = db.query(User).filter(User.id == user_id).first()
+    user = db.query(User).filter(User.id == UUID(user_id)).first()
     if user is None:
         raise HTTPException(status_code=401, detail="User not found")
     return user
@@ -54,7 +55,7 @@ def require_admin(current_user: User = Depends(get_current_user)) -> User:
 def register(payload: UserCreate, db: Session = Depends(get_db)):
     existing = db.query(User).filter((User.email == payload.email) | (User.username == payload.username)).first()
     if existing:
-        raise HTTPException(status_code=401, detail="Email or username already exists")
+        raise HTTPException(status_code=400, detail="Email or username already exists")
     user = User(
         email=payload.email,
         username=payload.username,
