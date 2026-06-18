@@ -112,7 +112,7 @@ export default function CommunityPage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="min-h-screen"
+      className="min-h-screen pb-24 md:pb-0 w-full overflow-x-hidden"
     >
       <section className="relative py-24 px-4 text-center overflow-hidden">
         <GoldParticles count={30} />
