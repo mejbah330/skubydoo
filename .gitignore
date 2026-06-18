@@ -11,7 +11,10 @@ skubydoo-frontend/out/
 
 # Environment
 .env
+!.env.production
+!.env.example
 skubydoo-backend/.env
+!skubydoo-backend/.env.production
 
 # Database
 *.db

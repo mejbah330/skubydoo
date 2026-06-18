@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+*.db
+*.db-journal
+*.db-wal
+.env
+.git
+tests
+Dockerfile
+docker-compose.yml
+.dockerignore
+README.md
