@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-sm font-bold tracking-[0.2em] text-white mb-4">
-              SHUBYDOO
+              SKUBYDOO
             </h3>
             <p className="text-xs text-[#B0B0B0] leading-relaxed">
               Wear The Unseen. Premium limited-edition streetwear for the
@@ -73,7 +73,7 @@ export function Footer() {
 
         <div className="mt-12 pt-6 border-t border-white/5 text-center">
           <p className="text-[10px] text-[#B0B0B0] tracking-widest uppercase">
-            &copy; {new Date().getFullYear()} ShubyDoo. Wear The Unseen.
+            &copy; {new Date().getFullYear()} SkubyDoo. Wear The Unseen.
           </p>
         </div>
       </div>

@@ -54,7 +54,7 @@ export default function LoginPage() {
             className="mb-4"
           >
             <span className="text-2xl font-black tracking-[0.3em] font-display gold-text">
-              SHUBYDOO
+              SKUBYDOO
             </span>
           </motion.div>
           <h1 className="text-2xl font-bold">Welcome Back</h1>
@@ -140,10 +140,10 @@ export default function LoginPage() {
           <div className="glass rounded-xl p-4 text-center">
             <p className="text-[10px] text-[#B0B0B0] uppercase tracking-wider mb-1">Demo Credentials</p>
             <p className="text-xs text-[#B0B0B0]">
-              <span className="text-white">Admin:</span> admin@shubydoo.com / admin123
+              <span className="text-white">Admin:</span> admin@skubydoo.com / admin123
             </p>
             <p className="text-xs text-[#B0B0B0]">
-              <span className="text-white">Customer:</span> demo@shubydoo.com / demo123
+              <span className="text-white">Customer:</span> demo@skubydoo.com / demo123
             </p>
           </div>
         </form>

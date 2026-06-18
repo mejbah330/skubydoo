@@ -80,16 +80,16 @@ for ed, vars_list in variations_data.items():
 import hashlib
 
 admin = User(
-    email="admin@shubydoo.com",
+    email="admin@skubydoo.com",
     username="admin",
-    full_name="ShubyDoo Admin",
+    full_name="SKUBYDOO Admin",
     hashed_password=hashlib.sha256("admin123".encode()).hexdigest(),
     role="admin",
 )
 db.add(admin)
 
 customer = User(
-    email="demo@shubydoo.com",
+    email="demo@skubydoo.com",
     username="demo",
     full_name="Demo User",
     hashed_password=hashlib.sha256("demo123".encode()).hexdigest(),

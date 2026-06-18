@@ -58,7 +58,7 @@ export default function VerifyCertificatePage() {
               </div>
             </div>
             <p className="text-xs text-[#B0B0B0]">
-              This certificate guarantees the authenticity of a genuine ShubyDoo piece.
+              This certificate guarantees the authenticity of a genuine SkubyDoo piece.
             </p>
           </>
         ) : (

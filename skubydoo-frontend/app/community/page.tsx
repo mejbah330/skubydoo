@@ -162,7 +162,7 @@ export default function CommunityPage() {
                       <Camera className="w-5 h-5 text-[#B0B0B0]" />
                     </div>
                     <div className="flex-1">
-                      <p className="text-sm text-[#B0B0B0]">Share your ShubyDoo fit</p>
+                      <p className="text-sm text-[#B0B0B0]">Share your SkubyDoo fit</p>
                     </div>
                     <Button variant="outline" size="sm" onClick={() => setShowUpload(true)}>
                       <Image className="w-4 h-4 mr-2" /> Upload
@@ -351,7 +351,7 @@ export default function CommunityPage() {
         {tab === "designs" && (
           <div className="space-y-6">
             <p className="text-center text-[#B0B0B0] text-sm mb-8">
-              Vote for the next ShubyDoo design. The community decides.
+              Vote for the next SkubyDoo design. The community decides.
             </p>
             {DESIGN_VOTES.map((design, i) => (
               <motion.div

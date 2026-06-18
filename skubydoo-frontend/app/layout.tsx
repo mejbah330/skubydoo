@@ -23,14 +23,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SHUBYDOO | Wear The Unseen",
+  title: "SKUBYDOO | Wear The Unseen",
   description:
     "Premium limited-edition streetwear. Not made for everyone. Wear the unseen.",
-  keywords: ["streetwear", "premium", "limited edition", "fashion", "shubydoo"],
+  keywords: ["streetwear", "premium", "limited edition", "fashion", "skubydoo"],
   openGraph: {
-    title: "SHUBYDOO | Wear The Unseen",
+    title: "SKUBYDOO | Wear The Unseen",
     description: "Premium limited-edition streetwear. Not made for everyone.",
-    siteName: "SHUBYDOO",
+    siteName: "SKUBYDOO",
     type: "website",
   },
 };

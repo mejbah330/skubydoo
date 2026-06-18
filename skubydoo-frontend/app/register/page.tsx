@@ -54,7 +54,7 @@ export default function RegisterPage() {
             className="mb-4"
           >
             <span className="text-2xl font-black tracking-[0.3em] font-display gold-text">
-              SHUBYDOO
+              SKUBYDOO
             </span>
           </motion.div>
           <h1 className="text-2xl font-bold">Join The Family</h1>
@@ -76,7 +76,7 @@ export default function RegisterPage() {
                 onChange={(e) => setUsername(e.target.value)}
                 required
                 minLength={3}
-                placeholder="shubydoo_fan"
+                placeholder="skubydoo_fan"
                 className="w-full bg-white/5 border border-white/10 rounded-xl pl-11 pr-4 py-3 text-sm text-white placeholder:text-[#B0B0B0] focus:outline-none focus:border-[#D4AF37]/50 transition-colors"
               />
             </div>

@@ -26,7 +26,7 @@ app.add_middleware(
 
 @app.get("/api/health")
 def health():
-    return {"status": "ok", "brand": "SHUBYDOO"}
+    return {"status": "ok", "brand": "SKUBYDOO"}
 
 
 from routers import auth, worlds, products, orders, admin, vault, community, drops, analytics  # noqa: E402

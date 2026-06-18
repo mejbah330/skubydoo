@@ -13,7 +13,7 @@ const VAULT_ITEMS = [
     releaseDate: "2025-09-15",
     editionSize: 50,
     soldOutDate: "2025-09-16",
-    designerNotes: "The one that started it all. 50 pieces. Sold in 24 hours. The birth of ShubyDoo.",
+    designerNotes: "The one that started it all. 50 pieces. Sold in 24 hours. The birth of SkubyDoo.",
     image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&q=80",
     highlight: true,
   },
@@ -68,7 +68,7 @@ export default function VaultPage() {
             THE <span className="gold-text">VAULT</span>
           </h1>
           <p className="mt-4 text-[#B0B0B0] max-w-xl mx-auto">
-            Retired collections. Sold out masterpieces. The history of ShubyDoo.
+            Retired collections. Sold out masterpieces. The history of SkubyDoo.
           </p>
         </div>
       </section>

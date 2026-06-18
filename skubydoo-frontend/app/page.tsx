@@ -86,7 +86,7 @@ export default function Home() {
                 className="mb-8"
               >
                 <h1 className="text-[12vw] md:text-[8rem] font-black leading-none tracking-tighter font-display text-white">
-                  SHUBY<span className="gold-text">DOO</span>
+                  SKUBY<span className="gold-text">DOO</span>
                 </h1>
               </motion.div>
 
@@ -267,7 +267,7 @@ export default function Home() {
               CREATORS
             </h2>
             <p className="text-[#B0B0B0] text-lg leading-relaxed max-w-2xl mx-auto">
-              Building dreams while the world sleeps. Every ShubyDoo piece is a
+              Building dreams while the world sleeps. Every SkubyDoo piece is a
               statement. Not fast fashion. Not mass produced. Limited editions
               crafted for those who understand the culture.
             </p>
@@ -329,7 +329,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-sm font-bold tracking-[0.2em] text-white mb-4">
-                SHUBYDOO
+                SKUBYDOO
               </h3>
               <p className="text-xs text-[#B0B0B0] leading-relaxed">
                 Wear The Unseen.
@@ -374,7 +374,7 @@ export default function Home() {
           </div>
           <div className="mt-12 pt-6 border-t border-white/5 text-center">
             <p className="text-[10px] text-[#B0B0B0] tracking-widest uppercase">
-              &copy; {new Date().getFullYear()} ShubyDoo. Wear The Unseen.
+              &copy; {new Date().getFullYear()} SkubyDoo. Wear The Unseen.
             </p>
           </div>
         </div>

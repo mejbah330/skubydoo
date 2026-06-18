@@ -28,7 +28,7 @@ export function LuxuryLoader() {
               className="text-center"
             >
               <h1 className="text-4xl md:text-6xl font-bold tracking-[0.3em] font-display gold-text mb-4">
-                SHUBYDOO
+                SKUBYDOO
               </h1>
               <p className="text-sm md:text-base tracking-[0.5em] text-[#B0B0B0] uppercase">
                 Wear The Unseen

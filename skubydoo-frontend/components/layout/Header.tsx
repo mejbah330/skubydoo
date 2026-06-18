@@ -21,7 +21,7 @@ export function Header() {
             animate={{ opacity: 1, x: 0 }}
             className="text-xl font-bold tracking-[0.3em] font-display gold-text"
           >
-            SHUBYDOO
+            SKUBYDOO
           </motion.span>
         </Link>
 

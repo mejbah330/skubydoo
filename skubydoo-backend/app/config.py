@@ -3,7 +3,7 @@ from functools import lru_cache
 
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "ShubyDoo API"
+    PROJECT_NAME: str = "SKUBYDOO API"
     VERSION: str = "1.0.0"
     DEBUG: bool = True
 

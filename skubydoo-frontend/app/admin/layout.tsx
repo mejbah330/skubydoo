@@ -49,7 +49,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <div className="p-6 border-b border-white/5">
             <Link href="/admin" className="flex items-center gap-2">
               <span className="text-sm font-bold tracking-[0.3em] font-display gold-text">
-                SHUBYDOO
+                SKUBYDOO
               </span>
             </Link>
           </div>

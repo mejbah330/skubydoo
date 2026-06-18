@@ -13,9 +13,9 @@ export default function AdminSettings() {
         <h3 className="text-sm font-bold uppercase tracking-wider mb-4">Store Information</h3>
         <div className="space-y-4">
           {[
-            { label: "Store Name", value: "SHUBYDOO" },
+            { label: "Store Name", value: "SKUBYDOO" },
             { label: "Tagline", value: "Wear The Unseen" },
-            { label: "Email", value: "contact@shubydoo.com" },
+            { label: "Email", value: "contact@skubydoo.com" },
             { label: "Currency", value: "INR (₹)" },
           ].map(({ label, value }) => (
             <div key={label} className="flex justify-between items-center py-2 border-b border-white/5">

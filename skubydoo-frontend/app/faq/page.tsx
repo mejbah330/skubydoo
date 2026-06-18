@@ -6,9 +6,9 @@ import { Card } from "@/components/ui/Card";
 import { GoldParticles } from "@/components/effects/GoldParticles";
 
 const FAQS = [
-  { q: "What is ShubyDoo?", a: "Premium limited-edition streetwear. Every piece is numbered, authentic, and exclusive." },
+  { q: "What is SkubyDoo?", a: "Premium limited-edition streetwear. Every piece is numbered, authentic, and exclusive." },
   { q: "How do drops work?", a: "Each design is released as a limited drop. Once sold out, it moves to the Vault." },
-  { q: "What is the Vault?", a: "Our archive of retired collections. The history of ShubyDoo." },
+  { q: "What is the Vault?", a: "Our archive of retired collections. The history of SkubyDoo." },
   { q: "Can I return items?", a: "Returns accepted within 7 days. Items must be unworn with tags attached." },
   { q: "How does the certificate work?", a: "Every order receives a unique digital certificate (SD-YYYY-NNNNNN). You can verify it on our site." },
   { q: "What payment methods are available?", a: "Currently we support Cash on Delivery. Stripe and PayPal coming soon." },
